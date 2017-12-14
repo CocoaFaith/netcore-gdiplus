@@ -1,8 +1,8 @@
 version: "3.3"
 services:
   net_core:
-    image: cocoafaith/netcore-gdiplus:2.0
-    container_name: container_name
+    image: cocoafaith/netcore2-gdiplus:2.0
+    container_name: ink_yjd
     build:
      context: .
      dockerfile: Dockerfile
@@ -11,4 +11,4 @@ services:
       - "8086:8086"
     volumes:
       - ./app:/app
-    command: Web.dll
+    command: YJD.ZRX.Web.dll
