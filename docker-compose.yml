@@ -1,0 +1,14 @@
+version: "3.3"
+services:
+  net_core:
+    image: cocoafaith/netcore-gdiplus:2.0
+    container_name: container_name
+    build:
+     context: .
+     dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "8086:8086"
+    volumes:
+      - ./app:/app
+    command: Web.dll
