@@ -2,7 +2,7 @@ version: "3.3"
 services:
   net_core:
     image: cocoafaith/netcore2-gdiplus:2.0
-    container_name: ink_yjd
+    container_name: container_name
     build:
      context: .
      dockerfile: Dockerfile
